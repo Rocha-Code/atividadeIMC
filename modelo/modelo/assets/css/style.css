@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+body {
+  background-color: #085f63; /* Define a cor de fundo do corpo da página como um tom de azul escuro. */
+  display: flex; /* Define o layout do corpo da página como um contêiner flexível, permitindo que os elementos filhos sejam organizados de forma flexível. */
+  justify-content: center; /* Alinha os elementos filhos horizontalmente ao centro do contêiner flexível. */
+  align-items: center; /* Alinha os elementos filhos verticalmente ao centro do contêiner flexível. */
+  height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização, garantindo que o conteúdo seja centralizado verticalmente. */
+  font-family: Arial, sans-serif; /* Define a família de fontes para o texto da página como Arial, com uma fonte de fallback genérica sans-serif. */
+}
+
+.container {
+  background-color: #ffffff; /* Define a cor de fundo do contêiner como branco. */
+  padding: 40px; /* Adiciona um preenchimento interno de 40 pixels ao redor do conteúdo do contêiner. */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao contêiner. */
+  width: 100%; /* Define a largura do contêiner como 100% do seu elemento pai, permitindo que ele se ajuste ao tamanho disponível. */
+  max-width: 500px; /* Define a largura máxima do contêiner como 500 pixels, evitando que ele fique muito largo em telas grandes. */	
+}
+
+.tabela-referencia-imc, .tabela-referencia-resultado {
+  vertical-align: top; /* Alinha os elementos verticalmente ao topo, garantindo que eles fiquem alinhados corretamente quando exibidos lado a lado. */
+  width: 48%; /* Define a largura dos elementos como 48% do seu elemento pai. */
+}
+
+.tabela-referencia-imc span, .tabela-referencia-resultado span {
+  display: block; /* Faz um ficar embaixo do outro */
+  margin-bottom: 8px; /* Adiciona uma margem inferior de 8 pixels entre os elementos para criar espaçamento. */
+} 
+
+.tabela-referencia-imc h3, 
+.tabela-referencia-resultado h3 {
+  font-size: 1.2rem; /* Define o tamanho da fonte dos títulos como 2 vezes o tamanho da fonte base, tornando-os mais proeminentes e fáceis de ler. */
+  margin-bottom: 15px; /* Adiciona uma margem inferior de 15 pixels entre os títulos e os elementos seguintes para criar espaçamento. */
+  color: #000; /* Define a cor do texto dos títulos como preto para garantir um contraste adequado com o fundo branco. */
+  font-weight: bold; /* Define o peso da fonte dos títulos como negrito para destacar o texto e torná-lo mais visível. */
+}
+
+label {
+  display: block; /* Faz um ficar embaixo do outro: os rótulos dos campos de entrada serão exibidos em blocos separados, garantindo que cada rótulo fique em uma linha diferente. */
+  margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels entre os elementos para criar espaçamento. */
+  font-size: 1rem; /* Define o tamanho da fonte dos rótulos como 1 vez o tamanho da fonte base, garantindo que eles sejam legíveis e se destaquem. */
+}
+
+input {
+  width: 100%; /* Define a largura dos campos de entrada como 100% do seu elemento pai, permitindo que eles se ajustem ao tamanho disponível. */
+  padding: 12px; /* Adiciona um preenchimento interno de 12 pixels ao redor do conteúdo dos campos de entrada, proporcionando um espaço confortável para digitar. */
+  margin-bottom: 20px; /* Adiciona uma margem inferior de 20 pixels entre os campos de entrada para criar espaçamento. */
+  border: 1px solid #ccc; /* Define a borda dos campos de entrada como uma linha sólida de 1 pixel de largura com a cor #ccc (um tom de cinza claro). */
+  border-radius: 4px; /* Adiciona bordas arredondadas aos campos de entrada para melhorar a aparência visual. */
+  font-size: 1rem; /* Define o tamanho da fonte dos campos de entrada como 1 vez o tamanho da fonte base, garantindo que o texto seja legível. */
+}
+
+button {
+  width: 100%; /* Define a largura do botão como 100% do seu elemento pai, permitindo que ele se ajuste ao tamanho disponível. */
+  padding: 15px; /* Adiciona um preenchimento interno de 15 pixels ao redor do conteúdo do botão, proporcionando um espaço confortável para clicar. */
+  background-color: #000; /* Define a cor de fundo do botão como preto. */
+  color: #fff; /* Define a cor do texto do botão como branco para garantir um contraste adequado com o fundo preto. */
+  border: none; /* Remove a borda padrão do botão para criar um visual mais limpo. */
+  border-radius: 4px; /* Adiciona bordas arredondadas ao botão para melhorar a aparência visual. */
+  font-size: 1.1rem; /* Define o tamanho da fonte do botão como 1.1 vezes o tamanho da fonte base, tornando o texto do botão mais proeminente e fácil de ler. */
+  cursor: pointer; /* Altera o cursor para um ponteiro quando o mouse estiver sobre o botão, indicando que ele é clicável. */
+  font-weight: bold; /* Define o peso da fonte do botão como negrito para destacar o texto e torná-lo mais visível. */
+}
+
+button:hover {
+  background-color: #333; /* Altera a cor de fundo do botão para um tom de cinza escuro quando o mouse estiver sobre ele, proporcionando um efeito visual de destaque. */
+}
+
+.wrapper-tabela {
+    display: flex; /* Define o layout do contêiner como um contêiner flexível, permitindo que os elementos filhos sejam organizados de forma flexível. */
+    justify-content: space-evenly; /* Distribui os elementos filhos com espaço entre eles, garantindo que eles fiquem separados e alinhados corretamente. */
+    margin: auto; /* Adiciona uma margem automática para centralizar o contêiner horizontalmente. */
+    align-items: flex-start; /* Alinha os elementos filhos ao início do eixo vertical, garantindo que eles fiquem alinhados corretamente quando exibidos lado a lado. */
+    width: 90%; /* Define a largura do contêiner como 90% do seu elemento pai, permitindo que ele se ajuste ao tamanho disponível. */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels ao redor do conteúdo do contêiner, proporcionando um espaço confortável para os elementos filhos. */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao contêiner para melhorar a aparência visual. */
+    background-color: #ccc; /* Define a cor de fundo do contêiner como um tom de cinza claro. */
+  }
+
+.tabela-referencia-imc span,
+.tabela-referencia-resultado span {
+  font-size: 1.2rem; /* Define o tamanho da fonte dos elementos span dentro das tabelas de referência como 1.4 vezes o tamanho da fonte base, tornando-os mais proeminentes e fáceis de ler. */
+}
+
+input, button {
+  box-sizing: border-box; /* Define o modelo de caixa para os elementos de entrada e botão como "border-box", o que significa que o preenchimento e a borda serão incluídos na largura total do elemento, garantindo que eles se ajustem corretamente ao tamanho definido. */
+  width: 100%; /* Define a largura dos elementos de entrada e botão como 100% do seu elemento pai, permitindo que eles se ajustem ao tamanho disponível. */
+}
+
+/* Estilo base para qualquer resultado */
+#resultado p {
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Níveis de cores */
+.cor-normal { 
+  background-color: #d4edda; color: #155724;
+ } /* Verde */
+
+.cor-alerta { 
+  background-color: #fff3cd; color: #856404; 
+} /* Amarelo */
+
+.cor-perigo { 
+  background-color: #f8d7da; color: #721c24; 
+} /* Vermelho */
+
+.cor-erro   { 
+  background-color: #e2e3e5; color: #383d41;
+} /* Cinza (para inputs vazios) */
