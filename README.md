@@ -1,7 +1,6 @@
 # 🚀 Calculadora de IMC - Versão Profissional
 
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=Status&message=Concluído&color=085f63&style=for-the-badge" alt="Status Concluído">
   <img src="https://img.shields.io/static/v1?label=JavaScript&message=ES6+&color=f7df1e&style=for-the-badge&logo=javascript" alt="JavaScript">
   <img src="https://img.shields.io/static/v1?label=CSS3&message=Flexbox&color=1572b6&style=for-the-badge&logo=css3" alt="CSS3">
 </p>
